@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#container {
+    background-color: rgb(240, 240, 240);
+    width: 375px;
+    height: 815px;
+}
+.indicator-box{
+    position: relative;
+    background-color: rgb(161,128,11);
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    border-radius: 3px;
+    animation-name: example;
+    animation-timing-function: linear;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.indicator-container{
+    display: flex;
+    justify-content: center;
+}
+p{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+@keyframes example {
+    from {top: 0px;}
+    to {top: 20px;}
+}
