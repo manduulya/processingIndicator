@@ -2,11 +2,18 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #container {
     background-color: rgb(240, 240, 240);
     width: 375px;
     height: 815px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .indicator-box{
     position: relative;
@@ -15,21 +22,25 @@ body{
     height: 15px;
     margin: 5px;
     border-radius: 3px;
-    animation-name: example;
-    animation-timing-function: linear;
-    animation-duration: 0.7s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+
 }
 .indicator-container{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 p{
     text-transform: uppercase;
     font-weight: 600;
 }
+.animate{
+    animation-name: example;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 @keyframes example {
     from {top: 0px;}
-    to {top: 20px;}
+    to {top: -15px;}
 }
