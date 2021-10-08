@@ -1,4 +1,5 @@
 body{
+    font-family: 'Muli', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -22,8 +23,12 @@ body{
     height: 15px;
     margin: 5px;
     border-radius: 3px;
-
+    transition: transform 0.3s linear;
 }
+.indicator-box.grow{
+    transform: scale(1.25);
+}
+
 .indicator-container{
     display: flex;
     justify-content: center;
@@ -32,15 +37,4 @@ body{
 p{
     text-transform: uppercase;
     font-weight: 600;
-}
-.animate{
-    animation-name: example;
-    animation-timing-function: linear;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-@keyframes example {
-    from {top: 0px;}
-    to {top: -15px;}
 }
