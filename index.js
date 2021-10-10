@@ -14,28 +14,37 @@ for(let i=0; i<rows; i++){
 // console.log(dotsArr)
 
 const dots = document.querySelectorAll('.indicator-box')
-// console.log(dots)
 
 
-dotsArr.forEach((rows, i) => {
-    growDot(rows, i)
-    // console.log(rows, i)
-})
-
-function growDot(i) {
-    // for(let dot of dots) {
-        const dot = document.querySelector('.indicator-box')
-        if(!dot.classList.contains('grow'));
+// dotsArr.forEach((i) => {
+//     growDot(i)
+//     console.log(i)
+// })
+for(let dot of dots) {
+    console.log(dot)
+    if(!dot.classList.contains('grow'));
+    setTimeout(() => {
         dot.classList.add('grow');
-        console.log(i)
-        
-
-        // setTimeout(() => {
-        //     growDot(rows)
-        // }, 100)
-        // setTimeout(() => {
-        //     dot.classList.remove('grow')
-        // }, 300)
-    // }
+    }, 1000)
+    setTimeout(() => {
+        dot.classList.remove('grow');
+    }, 2000)
 }
 
+// function growDot() {
+
+//         const dot = document.querySelector('.indicator-box')
+//         if(!dot.classList.contains('grow'));
+//         dot.classList.add('grow');
+//         // console.log(dot)
+        
+
+//         // setTimeout(() => {
+//         //     growDot(rows)
+//         // }, 100)
+//         // setTimeout(() => {
+//         //     dot.classList.remove('grow')
+//         // }, 300)
+//     // 
+// }
+// growDot()
